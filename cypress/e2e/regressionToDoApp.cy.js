@@ -1,8 +1,6 @@
 import mainPage from "../support/pageObjects/main-page.pageObject";
 
 describe("Regression ToDo App", () => {
-
-    
   context("Validate Main Page", () => {
     beforeEach(() => {
       cy.visit("/");
@@ -68,19 +66,17 @@ describe("Regression ToDo App", () => {
 
   context("Validate when item is deleted", () => {
     beforeEach(() => {
-        cy.visit("/");
-        var todoItems = ["Apple", "Banana", "Carrot"];
-    
-        todoItems.forEach(function (item, index, array) {
-          mainPage.inputText(item);
-        });
-        
+      cy.visit("/");
+      var todoItems = ["Apple", "Banana", "Carrot"];
+
+      todoItems.forEach(function (item, index, array) {
+        mainPage.inputText(item);
       });
-    
-    
-      it("Delete one item from the list", () => {
-       mainPage.deleteItem();
-       mainPage.validateSizeToDo(2);
     });
-  })
+
+    it("Delete one item from the list", () => {
+      mainPage.deleteItem();
+      mainPage.validateSizeToDo(2);
+    });
+  });
 });
