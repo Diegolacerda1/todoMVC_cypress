@@ -22,7 +22,7 @@ describe('Validate app filters after adding items', () => {
 
 
 it("Filter completed items", () => {
-    
+    mainPage.filterItem("Completed")
 });
 
 
