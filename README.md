@@ -23,3 +23,8 @@ Config:
     3. Filter items
     4. Main Page access
     5. Full regression testing
+
+
+Enjoy it!
+
+My email is: diegocslacerda@gmail.com
