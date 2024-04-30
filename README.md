@@ -13,12 +13,13 @@ Config:
 - Download and install latest version of Node.js at: https://nodejs.org/en/download
 - Create a new folder for the project
 - Open Visual Studio Code or any IDE
+- Open your terminal
 - Check your Node package version:
     node -v
 - Initialize a Node Project:
     npm init -y
 - Install Cypress:
-    npm install cypress --save-dev
+    npm install cypress 
 - Open Cypress:
     npx cypress open
 - Run any of the following specs with the tests:
