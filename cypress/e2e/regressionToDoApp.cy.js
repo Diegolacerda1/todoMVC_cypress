@@ -50,7 +50,7 @@ describe("Regression ToDo App", () => {
       todoItems.forEach(function (item, index, array) {
         mainPage.inputText(item);
       });
-      mainPage.checkItem();
+      mainPage.checkItem(); 
     });
 
     it("Filter active items", () => {
