@@ -60,7 +60,7 @@ describe("Regression ToDo App", () => {
 
     it("Filter completed items", () => {
       mainPage.filterItem("Completed");
-      mainPage.validateSizeToDo(1);
+      mainPage.validateSizeToDo(1); 
     });
   });
 
