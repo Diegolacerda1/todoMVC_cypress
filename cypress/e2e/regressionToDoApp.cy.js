@@ -14,6 +14,7 @@ describe("Regression ToDo App", () => {
   context("Validate when item is added", () => {
     beforeEach(() => {
       cy.visit("/");
+      
     });
 
     it("Add more than one item to the list", () => {
