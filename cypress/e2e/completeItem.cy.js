@@ -6,11 +6,11 @@ describe('Check "done" items on the list', () => {
     var todoItems = ["Apple", "Banana", "Carrot"];
 
     todoItems.forEach(function (item, index, array) {
-      mainPage.inputText(item);
+      mainPage.writeInputText(item);
     });
   });
 
   it("Add more than one item to the list", () => {
-    mainPage.checkItem()
-});
+    mainPage.checkItem();
+  });
 });

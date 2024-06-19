@@ -1,7 +1,6 @@
 import mainPage from "../support/pageObjects/main-page.pageObject";
 
 describe("Regression ToDo App", () => {
-  
   context("Validate Main Page", () => {
     beforeEach(() => {
       cy.visit("/");
@@ -15,14 +14,13 @@ describe("Regression ToDo App", () => {
   context("Validate when item is added", () => {
     beforeEach(() => {
       cy.visit("/");
-      
     });
 
     it("Add more than one item to the list", () => {
       var todoItems = ["Apple", "Banana", "Carrot"];
 
       todoItems.forEach(function (item, index, array) {
-        mainPage.inputText(item);
+        mainPage.writeInputText(item);
       });
       mainPage.validateCounter(3);
     });
@@ -34,7 +32,7 @@ describe("Regression ToDo App", () => {
       var todoItems = ["Apple", "Banana", "Carrot"];
 
       todoItems.forEach(function (item, index, array) {
-        mainPage.inputText(item);
+        mainPage.writeInputText(item);
       });
     });
 
@@ -50,9 +48,9 @@ describe("Regression ToDo App", () => {
       var todoItems = ["Apple", "Banana", "Carrot"];
 
       todoItems.forEach(function (item, index, array) {
-        mainPage.inputText(item);
+        mainPage.writeInputText(item);
       });
-      mainPage.checkItem(); 
+      mainPage.checkItem();
     });
 
     it("Filter active items", () => {
@@ -62,7 +60,7 @@ describe("Regression ToDo App", () => {
 
     it("Filter completed items", () => {
       mainPage.filterItem("Completed");
-      mainPage.validateSizeToDo(1); 
+      mainPage.validateSizeToDo(1);
     });
   });
 
@@ -72,7 +70,7 @@ describe("Regression ToDo App", () => {
       var todoItems = ["Apple", "Banana", "Carrot"];
 
       todoItems.forEach(function (item, index, array) {
-        mainPage.inputText(item);
+        mainPage.writeInputText(item);
       });
     });
 
