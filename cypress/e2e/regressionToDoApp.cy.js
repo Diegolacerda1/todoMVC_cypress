@@ -8,6 +8,7 @@ describe("Regression ToDo App", () => {
 
     it("Validade data input", () => {
       mainPage.validateInput("What needs to be done?");
+      mainPage.writeInputText("chama");
     });
   });
 

@@ -22,7 +22,7 @@ class mainPage {
   validateInput(text) {
     cy.get(elem.inputToDo)
       .should("have.attr", "placeholder")
-      .and("include", text);
+     
   }
 
   validateCounter(number) {

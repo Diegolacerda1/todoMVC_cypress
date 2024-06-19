@@ -1,7 +1,7 @@
 // This file exports ELEMENTS, ITEMS, and FILTERS so they can be used elsewhere
 
 export const ELEMENTS = {
-    inputToDo : 'input[class="new-todo"]',
+    inputToDo: 'input[class="new-todo"]',
 
 }
 
