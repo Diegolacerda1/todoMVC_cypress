@@ -1,6 +1,7 @@
 import mainPage from "../support/pageObjects/main-page.pageObject";
 
 describe("Regression ToDo App", () => {
+  
   context("Validate Main Page", () => {
     beforeEach(() => {
       cy.visit("/");
